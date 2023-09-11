@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilohotel.css" type="text/css" media="screen" />
+    <title>Hoteleria SENA</title>
+    
+    
+    <style>
+        /*fondo slato tequendama*/
+        body {
+            margin: 13%;
+            padding: 0;
+            background-image: url('IMG/salto-tequendama.jpg');
+            background-size: absolute;
+            background-position:center;
+            font-family: Arial, sans-serif;
+            color: white; /* color del texto */
+        }
+
+        /*REFERENCIAS DE IMAGENES DEL MENU HOTEL*/
+        .menu a.piscina:hover::before {
+            background-image: url('IMG/piscina.jpg');
+        }
+
+        .menu a.restaurante:hover::before {
+            background-image: url('IMG/restauranteh.jpg');
+        }
+
+        .menu a.bar:hover::before {
+            background-image: url('IMG/barh.jpg');
+        }
+
+        .menu a.Servicioh:hover::before {
+            background-image: url('IMG/servicioh.jpg');
+        }
+
+        .menu a.spa:hover::before{
+            background-image: url('IMG/spa.jpg');
+        }
+        .menu a.InicioS:hover::before{
+            background-image: url('IMG/iniciarsesion.jpg');
+        }
+        .menu a.reserva:hover::before{
+            background-image: url('IMG/money.jpg');
+        }
+        .menu a.contacto:hover::before{
+            background-image: url('IMG/phone.jpg');
+        }
+        .menu a.registro:hover::before{
+            background-image: url('IMG/registro.jpg');
+        }
+        .menu a.blog:hover::before{
+            background-image: url('IMG/escudo.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Bienvenido a Hoteleria Cide</h1>
+        <p>Por favor selecciona uno de nuestros servicios para tener información de él.</p>
+        <div class="menu">
+            <a href="piscina.html" class="piscina">Piscina</a>
+            <a href="restaurante.html" class="restaurante">Restaurante</a>
+            <a href="bar.html" class="bar">Bar</a>
+            <a href="servicioh.html" class="Servicioh">Servicio de Habitacion</a>
+            <a href="spa.html" class="spa">Spa</a>
+            <a href="InicioSesion.html" class="InicioS">Iniciar Sesion</a>
+            <a href="reserva.html" class="reserva">Reservar</a>
+            <a href="contacto.html" class="contacto">Contactenos</a>
+            <a href="registro.html" class="registro">Registro</a>
+            <a href="index.html" class="blog">Blog</a>          
+        </div>
+    </div>
+</body>
+</html>

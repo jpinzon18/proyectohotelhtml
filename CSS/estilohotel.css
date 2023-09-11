@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('IMG/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white; /* color del texto */
+}
+
+.content {
+    padding: 100px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 167, 4);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ESTILO TEXTO OPCIONES MENU*/
+.menu a {
+    display: inline-block;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+/*CAMBIO DE COLOR MENU SEGUN OPRIMA EL USUARIO*/
+.menu a:hover {
+    color: #353535; 
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* EFECTO APARICION IMAGEN SEGUN OPRIMA EL USUARIO*/
+.menu a:hover::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url('IMG/zonash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
